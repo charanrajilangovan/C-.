@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int age;
+    string name;
+    cout << "ur name is  : ";
+    cin >> name;
+    cout << "ur age is : ";
+    cin >> age;
+    cout << " his name is " << name << " his age is " << age;
+    return 0;
+}
