@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main(){
+int a,b;
+char c;
+cout << "enter the value of a :";
+cin >> a;
+cout << "enter the value of b :";
+cin >> b;
+cout << " enter the operation(+,_,*,/) : ";
+cin >> c;
+if(c=='+')
+cout << "your answer isss :)"<< a <<"+"<<b<<"="<< a+b;
+else if (c=='-')
+cout << "your answer isss :)"<< a <<"-"<<b<<"="<< a-b;
+else if (c=='*')
+cout << "your answer isss :)"<< a <<"*"<<b<<"="<< a*b;
+else if(c=='/')
+cout << "your answer isss :)"<< a <<"/"<<b<<"="<< a/b;
+else
+cout << "invalid operator ";
+return 0;
+}
