@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int a,i,runs=0,six=0,four=0;
+    int  total=0;
+    double strikerate,norun=0;
+    double average;
+    cout << " Enter the number of overs :";
+    cin >> a;
+    for(i=1;i<=a*6;i++){
+        cout << " ball number :" << i << "=" ;
+        cin >> runs;
+        
+            total = total + runs;
+    
+        if(runs==4)
+          four++;
+        if(runs==6)
+            six++;
+            if(runs==0)
+            norun++;
+            average =( double )total/(a*6);
+            
+    }        
+            strikerate=  (total*100)/(a*6);
+    cout << " \nTotal runs :" << "=" << total;
+  cout << " \nTotal sixs :" << "=" << six;
+     cout << " \nTotal fours :" << "=" << four;
+      cout << " \nstrikerate :" << "=" << strikerate;
+      cout << " \ndots :" << "=" << norun;
+      cout << " \naverage runs per balls :" << "=" << average;
+}
+
+
